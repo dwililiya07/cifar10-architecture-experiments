@@ -75,7 +75,7 @@ This model is also available through a Hugging Face inference pipeline for easie
 You can try the model directly here:
 
 🔗 Hugging Face Demo:
-https://huggingface.co/dwililiya/cifar10-cnn-classifier
+[https://huggingface.co/dwililiya/cifar10-cnn-classifier](https://huggingface.co/spaces/dwililiya/cifar10-cnn-classifier)
 
 How It Works:
 
