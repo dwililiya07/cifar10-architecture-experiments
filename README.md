@@ -69,3 +69,27 @@ Key techniques used:
 - Torchvision
 - Gradio
 - NumPy
+
+## Inference Pipeline (Hugging Face)
+This model is also available through a Hugging Face inference pipeline for easier testing and deployment.
+You can try the model directly here:
+
+🔗 Hugging Face Demo:
+https://huggingface.co/dwililiya/cifar10-cnn-classifier
+
+How It Works:
+
+- The inference pipeline performs the following steps:
+- Load the trained best_model.pth weights
+- Apply image preprocessing:
+- Resize to 32x32
+- Convert to tensor
+- Normalize using CIFAR-10 mean and standard deviation
+- Run forward pass through the CNN model
+- Output predicted class label
+
+Example Usage (Python):
+from transformers import pipeline
+classifier = pipeline("image-classification", model="dwililiya/cifar10-cnn-classifier")
+result = classifier("example_image.png")
+print(result)
