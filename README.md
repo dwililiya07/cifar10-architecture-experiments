@@ -5,6 +5,10 @@ build classification model using Convolutional Neural Network from Scratch
 
 This project implements a custom Convolutional Neural Network (CNN) trained on the CIFAR-10 dataset. The model was built and optimized through multiple experiments, including architecture tuning, learning rate scheduling, early stopping, and regularization.
 
+## Model Limitation
+
+The CNN model is trained for single-object classification. When images contain multiple objects from different classes, the model may produce incorrect predictions because it attempts to assign one label to the entire image.
+
 ## The final model achieved:
 - 92% test accuracy
 - Balanced precision, recall, and F1-score across all classes
