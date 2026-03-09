@@ -97,3 +97,6 @@ from transformers import pipeline
 classifier = pipeline("image-classification", model="dwililiya/cifar10-cnn-classifier")
 result = classifier("example_image.png")
 print(result)
+
+## Comparing the model builf from scratch and using transfer learning
+Using transfer learning is way better than build the model from scratch. Especially, when solve the case that has big dataset. in transfer learning, we can adjust pretrained model's layer and finetuning them to match with our datasets.
